@@ -44,14 +44,7 @@ https://templatemo.com/tm-539-simple-house
                             </div>
                         </div>
                     </div>
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" href="/users/student/home">Simple House</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
@@ -62,7 +55,7 @@ https://templatemo.com/tm-539-simple-house
                                 </li>
                                 <li class="nav-item ">
                                     <a class="nav-link" href="/users/student/list_articles">
-                                        list Articles
+                                        List Articles
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
@@ -83,18 +76,29 @@ https://templatemo.com/tm-539-simple-house
         </div>
 
         <main>
-            <header class="row tm-welcome-section">
-                <h2 class="col-12 text-center tm-section-title">Welcome to Simple House</h2>
-            </header>
+
             <div style="padding: 20px;">
-                <h1>Student Information</h1>
-                <br>
-                <ol>
-                    <li>Username: <span class="changeStyle">{{data.user.username}}</span></li>
-                    <li>Name: <span class="changeStyle">{{data.info.name}}</span></li>
-                    <li>Email: <span class="changeStyle">{{data.info.email}}</span></li>
-                    <li>Faculty: <span class="changeStyle">{{data.assign}}</span></li>
-                </ol>
+                <h3 style="text-align: center;">Student Information</h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>User Name</td>
+                            <td>{{data.user.username}}</td>
+                        </tr>
+                        <tr>
+                            <td>Full Name</td>
+                            <td>{{data.info.name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>{{data.info.email}}</td>
+                        </tr>
+                        <tr>
+                            <td>Faculty</td>
+                            <td>{{data.assign}}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
 
